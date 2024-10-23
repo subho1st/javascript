@@ -18,5 +18,30 @@
         }
         addLanguage("Python");
         addLanguage("PHP");
+
+        function optiAddLang(langName){
+            const listItem = document.createElement('li');
+            const myCon = document.createTextNode(langName)
+            listItem.appendChild(myCon);
+            document.querySelector('.language').appendChild(listItem);
+        }
+        optiAddLang("Java");
+
+        function myOptiAddLang(LangName){
+            const listItem = document.createElement('li');
+            const myCon = document.createTextNode(LangName);
+            listItem.appendChild(myCon);
+            document.querySelector('.language').appendChild(listItem);
+        }
+        myOptiAddLang("Ruby");
+        function addDiv(divCon){
+            const myDiv = document.createElement('div');
+            const myCon = document.createTextNode(divCon);
+            myDiv.appendChild(myCon);
+            document.body.appendChild(myDiv);
+        }
+        addDiv("My name is Raj");
+
+
     </script>
 </html>
